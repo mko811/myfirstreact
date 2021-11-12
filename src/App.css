@@ -9,19 +9,21 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite .3s linear;
+    animation: App-logo-spin infinite 2s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: burlywood;
+  background-image: url(https://media.istockphoto.com/vectors/chocolate-chip-cookie-seamless-pattern-vector-vector-id1191931457?k=20&m=1191931457&s=612x612&w=0&h=NlvuKsL0jxAYV_eidLdYI7jL3HHQJfHzQlkd9zmixag=);
+  background-blend-mode:screen;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(15px + 2vmin);
+  color: black;
 }
 
 .App-link {

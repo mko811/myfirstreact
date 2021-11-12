@@ -18,13 +18,34 @@ class Button extends React.Component{
         )
     }
 
+    resetCounter = () => {
+        this.setState(
+            {
+                count : 0
+            }
+        )
+    }
+
     render(){
         return (
-            <div>
-                <button onClick ={this.addCounter}>Click this button</button>
-                <p>counts = {this.state.count}</p>
-            </div>
-        
+            <html>
+            <head>
+                <style>
+                    
+                </style>
+            </head>
+            <body>
+                <div>
+                    <button onClick ={this.addCounter} 
+                    style={{background:"transparent", borderColor:"transparent"}}>
+                        <img src ="https://www.pngall.com/wp-content/uploads/2016/07/Cookie-Download-PNG.png"/>
+                    </button>
+                    <br/>
+                    <button onClick ={this.resetCounter}>Empty Cookie Jar</button>
+                    <p>count = {this.state.count} cookies</p>
+                </div>
+            </body>
+            </html>
         )
     }
 
