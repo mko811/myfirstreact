@@ -4,6 +4,7 @@ import Greet from './components/Greet';
 import Message from './components/Message';
 import Button from './components/Button';
 import Hello from './components/Hello';
+import Employee from './components/Employee';
 // this is a functional component/stateless component
 // jsx = javascript xml
 
@@ -25,10 +26,11 @@ function App() {
         <b> brrrrrrrrrrr </b>
         </p>
         <p>{Hello()}</p>
+        <Employee/>
         <Greet name="mico"/>   
         <Greet name="Sir"/>
         <Message/> 
-        <Button></Button>
+        <Button/>
         <p>waow daming cookis</p>              
         <br/>
         <img src="https://i.imgflip.com/3nm1gx.png" 
