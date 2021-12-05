@@ -34,15 +34,20 @@ class Button extends React.Component{
                     
                 </style>
             </head>
-            <body>
+            <body style={{background:"transparent", borderColor:"transparent"}}>
                 <div>
                     <button onClick ={this.addCounter} 
-                    style={{background:"transparent", borderColor:"transparent"}}>
+                    style={{background:"transparent", borderColor:"transparent", borderRadius:"150px"}}
+
+                    >
                         <img src ="https://www.pngall.com/wp-content/uploads/2016/07/Cookie-Download-PNG.png"/>
                     </button>
                     <br/>
-                    <button onClick ={this.resetCounter}>Empty Cookie Jar</button>
-                    <p>count = {this.state.count} cookies</p>
+                    <br/>
+                    <button class="btn btn-outline-dark btn-lg btn-light" 
+                    onClick ={this.resetCounter}>Empty Cookie Jar
+                    </button>
+                    <p class="fs-1"><b>{this.state.count}</b> cookies</p>
                 </div>
             </body>
             </html>

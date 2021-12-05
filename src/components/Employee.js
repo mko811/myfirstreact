@@ -2,14 +2,16 @@ import { useEffect, useState } from "react"
 import EmployeeService from "../services/employeeService"
 
 const Employee = () => {
-    const [employees, setEmployees] = useState([])
+
+    const [employees, setEmployees] = useState([])                         // useState Hooks 
+        // employees is our main variable - information of all the employees
 
     useEffect(
         () => {
-            EmployeeService.getEmployees() // promise
+            EmployeeService.getEmployees() // promise - asynchronous processes in JS
             .then(
                 response =>{
-                    setEmployees(response.data)
+                    setEmployees(response.data)                             // setEmployees is what fills up employees variable
                 }
             )
             .catch(
@@ -20,16 +22,19 @@ const Employee = () => {
         }
     )
 
-    return (                                                                // jsx - we return a table instead
+    return (                                                                // jsx - we return a table with the data of employees table
         <div>
             <h1>List of Employees</h1>
             <div>
-                <table border = "1">
-                    <tr>
-                        <td>Department</td>
-                        <td>Location</td>
-                        <td>Name</td>
-                    </tr>
+                <table className="table table-striped table-hover table-striped">
+                    <thead>
+                        <tr className="table-success">
+                            <td>Department</td>
+                            <td>Location</td>
+                            <td>Name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
                     {
                         employees.map(
                             employee => (
@@ -41,6 +46,7 @@ const Employee = () => {
                             )
                         )
                     }
+                    </tbody>
                 </table>
             </div>
         </div>
