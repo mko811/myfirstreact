@@ -1,10 +1,10 @@
 const NavBar =() =>{
     return(
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="https://archive.nyafuu.org/foolfuuka/boards/vt/image/1611/99/1611999443340.jpg" alt="" width="50" height="50"/>
+                            <img src="https://i.kym-cdn.com/photos/images/list/002/198/089/c9b.jpeg" alt="" width="50" height="50"/>
                          </a>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
