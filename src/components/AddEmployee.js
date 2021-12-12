@@ -9,8 +9,7 @@ const AddEmployee = () =>{
     const [department, setDepartment] = useState("")
     const {employee_ID} = useParams();
     const navigate = useNavigate();
-    const [number, setNumber] = useState(""); // 1. Note, no space between the quotes
-    const [error, setError] = useState(""); // 2. Track the error in the input
+    const [error, setError] = useState(""); // Track the error in the input
 
 
     useEffect(() => {
