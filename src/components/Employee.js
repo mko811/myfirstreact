@@ -48,12 +48,12 @@ const Employee = () => {
         <div>
             <h1>List of Employees</h1>
             <div>
-                <table className="table table-striped table-hover table-striped">
+                <table>
                     <thead>
                         <tr className="table-success">
-                            <td>Department</td>
-                            <td>Location</td>
-                            <td>Name</td>
+                            <td style={{width:"30%"}}>Department</td>
+                            <td style={{width:"30%"}}>Location</td>
+                            <td style={{width:"30%"}}>Name</td>
                             <td></td>
                         </tr>
                     </thead>
@@ -66,7 +66,7 @@ const Employee = () => {
                                         <td>{employee.location}</td>
                                         <td>{employee.name}</td>
                                         <td>
-                                            <div className="d-grid gap-2 d-md-flex mx-auto">
+                                            <div className="d-grid gap-4 d-md-flex mx-auto">
                                                 <Link className="btn btn-info" to={`/edit/${employee.employee_ID}`}>Update</Link>
                                                 <button className="btn btn-danger" onClick={(e) => deleteEmployee(employee.employee_ID)}>Delete</button>
                                             </div>
