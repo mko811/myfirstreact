@@ -48,7 +48,7 @@ const Employee = () => {
         <div>
             <h1>List of Employees</h1>
             <div>
-                <table>
+                <table className="table table-striped table-hover table-striped">
                     <thead>
                         <tr className="table-success">
                             <td style={{width:"30%"}}>Department</td>
