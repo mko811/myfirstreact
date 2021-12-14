@@ -6,22 +6,37 @@ class Button extends React.Component{
     constructor(){                  // same as java, it also has a constructor first
         super()                     // need to call the super constructor
         this.state = {              // this is equal to a json object
-            count : 0               // we want an increment each time we click the button
+            count : 0,               // we want an increment each time we click the button
+            text : 'wala ka pang cookis'
         }
     }
 
     addCounter = () => {                      // arrow function
         this.setState(
             {
-                count : this.state.count + 1
+                count : this.state.count + 1,
+                text : 'waow daming cookis!!!!'
             }
         )
     }
 
-    resetCounter = () => {
+    decCounter = () => {                      // arrow function
+        if (this.state.count === 0){            
+            this.updateText()
+        }
+        else{
+            this.setState(
+                {
+                    count : this.state.count - 1
+                }
+            )
+        }
+    }
+
+    updateText = () => {
         this.setState(
             {
-                count : 0
+                text : 'wala na, ubos mo na eh :('
             }
         )
     }
@@ -45,9 +60,10 @@ class Button extends React.Component{
                     <br/>
                     <br/>
                     <button class="btn btn-outline-dark btn-lg btn-light" 
-                    onClick ={this.resetCounter}>Empty Cookie Jar
+                    onClick ={this.decCounter}>Eat a Cookie
                     </button>
                     <p class="fs-1"><b>{this.state.count}</b> cookies</p>
+                    <p class="fs-1"><b>{this.state.text}</b></p>
                 </div>
             </body>
             </html>

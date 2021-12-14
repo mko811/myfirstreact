@@ -24,8 +24,7 @@ function Home() {
         <p>{Hello()}</p>
         <Greet name="Mico"/>   
         <Message/> 
-        <Button/>
-        <p>waow daming cookis</p>              
+        <Button/>            
         <br/>
         <img src="https://i.imgflip.com/3nm1gx.png" 
         alt="yep" style={{paddingBottom: 20}}/>
