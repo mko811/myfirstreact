@@ -51,6 +51,7 @@ class Button extends React.Component{
             </head>
             <body style={{background:"transparent", borderColor:"transparent"}}>
                 <div>
+                    <p className="fs-3">scuffed na cookie clicker</p>
                     <button onClick ={this.addCounter} 
                     style={{background:"transparent", borderColor:"transparent", borderRadius:"150px"}}
 

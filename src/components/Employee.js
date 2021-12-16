@@ -68,7 +68,13 @@ const Employee = () => {
                                         <td>
                                             <div className="d-grid gap-4 d-md-flex mx-auto">
                                                 <Link className="btn btn-info" to={`/myfirstreact/edit/${employee.employee_ID}`}>Update</Link>
-                                                <button className="btn btn-danger" onClick={(e) => deleteEmployee(employee.employee_ID)}>Delete</button>
+                                                {/* <button className="btn btn-danger" onClick={(e) => deleteEmployee(employee.employee_ID)}>Delete</button> */}
+                                                <button className="btn btn-danger"
+                                                    onClick={
+                                                        (e) => { if (window.confirm('Are you sure you want to delete this employee?') && deleteEmployee(employee.employee_ID)) this.onCancel() } }>
+                                                    
+                                                    Delete
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
